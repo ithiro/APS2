@@ -25,7 +25,7 @@ public class PoligonalFechada extends Poligonal {
         for (int i = 0; i < vertices.length-1; i++) {
         soma += vertices[i].dist(vertices[i+1]);
         }
-        soma += vertices[0].dist(vertices[vertices.lenght]);
+        soma += vertices[0].dist(vertices[v]);
         return soma;
     }
 }
