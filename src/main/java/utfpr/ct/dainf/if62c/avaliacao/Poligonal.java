@@ -33,4 +33,12 @@ public class Poligonal {
             else throw new RuntimeException("Vértices devem estar no mesmo plano.");
         }
     }
+    
+    public double getComprimento()  {
+        double soma = 0;
+        for (int i = 0; i < vertices.length-1; i++) {
+        soma += vertices[i].dist(vertices[i+1]);
+        }
+        return soma;
+    }
 }
